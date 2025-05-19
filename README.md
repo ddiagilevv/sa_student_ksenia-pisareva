@@ -1,1 +1,0 @@
-# sa_student_ksenia-pisareva
