@@ -1,0 +1,32 @@
+num1 = int(input("введите 1ое число: "))
+
+print("1ое число:", num1)
+
+message = '''
+введите операцию (+, -, *, /)
+
+'''
+operation = input(message)
+
+num2 = int(input("введите 2ое число: "))
+
+print("введите 2ое число:",  num2)
+
+if operation == '+':
+    print('Результат сложения: ')
+    result = num1 + num2
+elif operation == '-':
+    print('Результат вычитания: ')
+    result = num1 - num2
+elif operation == '/':
+        try:
+            result = num1 / num2
+        except ZeroDivisionError:
+            result = "Нельзя делить на 0!!!!"
+elif operation == '*':
+    print('Результат умножения: ')
+    result = num1 * num2
+else:
+    print('Неизвестная операция')
+
+print("Результат:", result)
