@@ -2,10 +2,10 @@
 using namespace std;
 int main () {
     double a, b;
-    char op;
+    char op, prodolzhit;
     string str;
 
-    while (true) {
+    while (prodolzhit == 'y') {
     cout <<"введите 1ое число: ";
     cin >> a;
     
@@ -15,10 +15,7 @@ int main () {
 
     cout <<"введите 2ое число: ";
     cin>>b;
-    if (op == 'x'){
-        cout << "Выход из программы нажмите 'x'";
-        break;
-    }
+    
 
     if (op == '+'){
         cout <<"Результат сложения: " << (a + b)<< endl;
@@ -33,6 +30,9 @@ int main () {
             cout <<" Результат деления: "<< (a / b)<< endl;
          }
     }
+    cout << "Введите 'y', чтобы продолжить, или любую клавишу, чтобы завершить" << endl;
+    cin >> prodolzhit;
+
     }
 return 0;
 }

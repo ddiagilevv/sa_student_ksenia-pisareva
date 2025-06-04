@@ -34,7 +34,7 @@ int main(){
 int matrix[2][3] = {
     {76, 2, 5},
     {3, 92, 0}
-}
+};
 
 cout << matrix[1][2]; // 0
 cout << matrix[1][1]; //92
