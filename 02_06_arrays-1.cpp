@@ -1,5 +1,4 @@
 #include <iostream>
-#include <limits>
 using namespace std;
 
 int main(){
@@ -19,8 +18,6 @@ int main(){
         } 
         cout << endl;
     }
-    std::cout << "Нажмите Enter для выхода..." << std::endl;
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    std::cin.get();
+    
     return 0;
 }
