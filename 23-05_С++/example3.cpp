@@ -1,33 +1,36 @@
 #include <iostream>
+#include <string>
 using namespace std;
-int main () {
-    double a, b;
-    char op;
-    string str;
-    cout << "введите 1ое число: ";
-    cin >> a;
 
-    cout << "введите операцию (+, -, *, /)";
-    cin >> op;
+int main() {
+    std::string Initials;
+    std::string Age;
+    std:: string City;
+    std::string hobby;
 
-    cout << "введите 2ое число: ";
-    cin >> b;
+    std::cout << "Введите Ваши ФИО:";
+    std::getline(std::cin, Initials);
 
-    if (op == '+') {
-        cout << "Результат сложения: " << (a + b) << endl;
-    } else if (op == '-') {
-        cout << "Результат вычитания: " << (a - b) << endl;
-    } else if (op == '*') {
-        cout << "Результат умножения: " << (a * b) << endl;
-    } else if (op == '/') {
-        if (b = 0){
-            cout << " Результат деления: " << (a / b) << endl;
-        } else {
+    std::cout << "Введите Ваш возраст:";
+    std::cin.ignore();
+    std::getline(std:: cin, Age);
 
-            cout << " Ошибка: нельзя делить на 0!" << endl;
-        }
-    }
-    return 0;
+    std::cout << "Введите Ваш город:";
+    std:: cin.ignore();
+    std::getline(std:: cin, City);
+
+    std::cout << "Введите Ваше хобби:";
+    std:: cin.ignore();
+    std::getline(std:: cin, hobby);
+
+    std::cout << "ФИО: " << Initials << std::endl;
+    std::cout << "Возраст: " << Age << std::endl;
+    std::cout << "Город: " << City << std:: endl;
+    std::cout << "Хобби: " << hobby << std::endl;
+
+return 0;
 }
+
+
 
   
